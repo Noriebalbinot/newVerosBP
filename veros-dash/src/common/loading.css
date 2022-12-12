@@ -1,0 +1,159 @@
+@keyframes rotatefirstball {
+  0% {
+    left: 25%;
+    opacity: .5;
+  }
+
+  25% {
+    left: 50%;
+    opacity: 1;
+  }
+
+  50% {
+    left: 75%;
+    opacity: .5;
+  }
+
+  75% {
+    left: 50%;
+    opacity: 0;
+  }
+
+  100% {
+    left: 25%;
+    opacity: .5;
+  }
+}
+
+@keyframes rotatemiddleball {
+  0% {
+    left: 50%;
+    opacity: 1;
+  }
+
+  25% {
+    left: 75%;
+    opacity: .5;
+  }
+
+  50% {
+    left: 50%;
+    opacity: 0;
+  }
+
+  75% {
+    left: 25%;
+    opacity: .5;
+  }
+
+  100% {
+    left: 50%;
+    opacity: 1;
+  }
+}
+
+@keyframes rotatelastball {
+  0% {
+    left: 75%;
+    opacity: .5;
+  }
+
+  25% {
+    left: 50%;
+    opacity: 0;
+  }
+
+  50% {
+    left: 25%;
+    opacity: .5;
+  }
+
+  75% {
+    left: 50%;
+    opacity: 1;
+  }
+
+  100% {
+    left: 75%;
+    opacity: .5;
+  }
+}
+
+@keyframes rotatebehindball {
+  0% {
+    left: 50%;
+    opacity: 0;
+  }
+
+  25% {
+    left: 25%;
+    opacity: .5;
+  }
+
+  50% {
+    left: 50%;
+    opacity: 1;
+  }
+
+  75% {
+    left: 75%;
+    opacity: .5;
+  }
+
+  100% {
+    left: 50%;
+    opacity: 0;
+  }
+}
+
+.element1 {
+  width: 5rem;
+  height: 5rem;
+  background: black;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  animation: rotatemiddleball 5s linear infinite;
+}
+
+.element2 {
+  width: 5rem;
+  height: 5rem;
+  background: black;
+  border-radius: 50%;
+  position: absolute;
+  opacity: .5;
+  left: 25%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  animation: rotatefirstball 5s linear infinite;
+}
+
+.element3 {
+  width: 5rem;
+  height: 5rem;
+  background: black;
+  border-radius: 50%;
+  position: absolute;
+  opacity: .5;
+  left: 75%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  animation: rotatelastball 5s linear infinite;
+}
+
+.element4 {
+  width: 5rem;
+  height: 5rem;
+  background: black;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 0;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  animation: rotatebehindball 5s linear infinite;
+}

@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.parag {
+  opacity: 0;
+  height: fit-content;
+  transition: all 2s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+.sec:hover .parag {
+  opacity: 1;
+  height: fit-content
+}
